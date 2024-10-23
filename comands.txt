@@ -1,0 +1,15 @@
+npm install -g typescript
+npm init -i
+npm install typescript --save-dev
+npx tsc --init
+touch index.js
+tsc
+in package.json/scripts || write a custom command 
+  "scripts": {
+    "dev": "tsc && node index.js"
+  },
+
+to run your code (dev) use  npm run dev
+-----------------------------------------------------
+another way to run typescript using vite
+npm init vite@latest project -- --template valilla-ts
